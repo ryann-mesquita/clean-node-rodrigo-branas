@@ -38,7 +38,7 @@ test("Dever criar um pedido com 3 itens com um cupom de desconto", function(){
     expect(total).toBe(128);
 });
 
-test("Dever criar um pedido com 3 itens com um cupom de desconto expirado", function(){
+test("Dever criar um pedido com 3 itens com um cupom de desconto expirado", function(){  
     const cpf = "839.435.452-10";
     const order = new Order(cpf, new Date("2021-12-10"));
     order.addItem(new Item(1, "Música", "CD", 30), 3);
